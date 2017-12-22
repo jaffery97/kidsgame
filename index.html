@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<title> Dragable Word Game </title>
+<link rel="stylesheet" href="style.css">
+<style>
+</style>
+
+<body>
+    <h1 style="float: left;text-transform: uppercase;padding-left: 20px;">Dragable word game</h1>
+    
+    
+   <div class="timer">
+       
+       
+       
+       <button name="btn" id='btn' value="Start" onclick="to_start();myFun(this)" class="fa fa-thumb-up";></button>
+       
+       <button id=n1 style="z-index: 2; position: relative; right: 0px; top: 10px; width: 100px; height: 100px; padding: 10px; color: white; font-size:20px; ">00:00:00 </button>
+       <a href="#noscroll" id="mute" style="text-decoration: none;color: white;">
+       <button onclick="myFunction(this)" class="fa fa-thumbs-up"></button>
+       </a>
+       
+       <br>
+       <br>
+       <button style="background-color: firebrick"><a href="javascript:history.go(0)" style="text-decoration: none;color: white;">Restart</a></button>
+       
+       
+       
+       
+       
+<br><br>
+
+    
+    </div>
+    
+    
+<!--    game start-->
+    
+    
+<div class="bod">
+    <div style="height:80px;"></div>
+    <div id="one" class="move">
+        <div id="mydivheader">The</div>
+
+    </div>
+
+    <div style="height:50px;"></div>
+    <div id="two" class="move">
+        <div id="mydivheader" style="background-color:white;"><img src="img/apple.png" alt="" style="width:30px;background-color: none;padding:0px; height: 30px;"> </div>
+    </div>
+    <div style="padding-left: 233px;">
+   
+    </div>
+    <div style="height:64px;"></div>
+    <div id="three" class="move">
+        <div id="mydivheader">Favorite</div>
+    </div>
+    <div style="height:50px;"></div>
+    <div id="four" class="move">
+        <div id="mydivheader">is</div>
+    </div>
+    <div style="height:50px;"></div>
+    <div id="five" class="move">
+        <div id="mydivheader">Fruit</div>
+    </div>
+    <div style="height:50px;"></div>
+    <div id="six" class="move">
+        <div id="mydivheader">a</div>
+    </div>
+    <div style="height:50px;"></div>
+    <div id="seven" class="move">
+        <div id="mydivheader">Math</div>
+    </div>
+    <div style="height:50px;"></div>
+    <div id="eight" class="move">
+        <div id="mydivheader">Subject</div>
+    </div>
+</div>
+
+    
+    
+    
+    
+
+    <footer>
+
+        Dragable word game 2017
+    </footer>
+
+
+    <script type="text/javascript" src="move.js"></script>
+    <script type="text/javascript" src="stopwatch.js"></script>
+
+    
+    
+    
+    
+    <audio id="background_audio" loop="true" autoplay="true" controls>
+  <source src="img/Funny%20Game%20Loop.mp3" type="audio/mp3">
+</audio>
+    
+
+
+<!--    music turn on/turn off-->
+    <script>
+    
+            var audio = document.getElementById('background_audio');
+
+document.getElementById('mute').addEventListener('click', function (e)
+{
+    e = e || window.event;
+    audio.muted = !audio.muted;
+    e.preventDefault();
+}, false);
+   
+    
+    </script>
+   
+    
+    <script>
+function myFunction(x) {
+    x.classList.toggle("fa-thumbs-down");
+}
+</script>
+    
+    <script>
+function myFun(x) {
+    x.classList.toggle("fa-thumb-down");
+}
+</script>
+    
+    
+<!--
+    <div class="timer">
+
+
+    <p> <span id="min">0</span>min <span id="sec">0</span>sec</p>
+    <p>
+        <button id="start">Start</button>
+        <button id="stop" disabled>Stop</button>
+        <button id="reset">Reset</button>
+        <button><a href="javascript:history.go(0)" style="text-decoration: none;color: white;">Restart</a></button>
+        
+        
+    </p>
+      
+    </div>
+-->
+
+
+</body>
+
+</html>

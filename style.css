@@ -1,0 +1,103 @@
+body{
+    font-family: serif sans-serif;
+}
+
+
+.move {
+    position:absolute;
+    z-index: 10;
+    
+    text-align: center;
+}
+  
+
+#mydivheader {
+    padding: 10px;
+    cursor: move;
+    width: 50px;
+   
+    border-radius: 100%;
+    border: 1px solid rgba(52, 73, 94,0.67);
+    color: rgba(52, 73, 94,1.0);
+    background-color: rgba(26, 188, 156,1.0);
+    color: white;
+    text-align: center;
+    
+  
+}
+footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    text-align: center;
+    background-color:darkred;
+    padding: 10px;
+    width: 100%;
+    color: aliceblue;
+    
+}
+
+
+.timer {
+    width: 360px;
+    height: 680px: margin: 0 auto;
+    padding: 20px;
+    border: 1px solid transparent;
+/*    background: rgba(26, 188, 156,1.0);*/
+    color: rgba(52, 73, 94, 0.9);
+    text-align: center;
+    float: right;
+    
+}
+
+button {
+    padding: 10px;
+    width: 60px;
+    height:60px;
+    border-radius: 100%;
+    margin: 0 10px;
+    border: 1px solid rgba(52, 73, 94,0.67);
+    color: white;
+    background: rgba(26, 188, 156,1.0);
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 59px 16px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 59px 16px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 59px 16px rgba(0,0,0,0.75);
+}
+button:disabled {
+   color: white;
+}
+button:focus, button:hover {
+    background: rgba(26, 188, 156,0.7);
+    outline: transparent;
+}
+
+@media only screen and (max-width:700px), only screen and (max-height:500px){
+    
+    body{display: none;}
+}
+.bod {
+   
+    padding: 50px;
+}
+
+audio {
+    display: none;
+}
+
+.fa-thumbs-up:before{content:"mute"}
+
+.fa-thumb-up:before{content:"Start"}
+.fa-thumbs-down:before{content:"unmute"}
+.fa-thumb-down:before{content:"Stop"}
+
+
+.fa {
+    
+    cursor: pointer;
+    user-select: none;
+}
+
+.fa:hover {
+  color: darkblue;
+}
